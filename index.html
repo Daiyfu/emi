@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Evolution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>FASHION EVOLUTION</h1>
+  <p>Click a tower to explore</p>
+</header>
+
+<div class="container">
+
+  
+<div class="card" onclick="window.location.href='fashion.html'">
+  <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Fashion">
+  <div class="card-header">Fashion</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='colors.html'">
+  <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Colors">
+  <div class="card-header">Colors</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='influence.html'">
+  <img src="https://images.pexels.com/photos/267447/pexels-photo-267447.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Influence">
+  <div class="card-header">Influence</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='cars.html'">
+  <img src="https://images.pexels.com/photos/28569838/pexels-photo-28569838.jpeg?cs=srgb&dl=pexels-martynas-linge-2836004-28569838.jpg&fm=jpg" alt="Cars">
+  <div class="card-header">Cars</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='gaming.html'">
+  <img src="https://images-cdn.ubuy.co.in/6530b3912734ed1f82746c98-oculus-quest-all-in-one-vr-gaming.jpg" alt="Gaming">
+  <div class="card-header">Gaming</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='food.html'">
+  <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Food">
+  <div class="card-header">Food</div>
+</div>
+
+
+<div class="card" onclick="window.location.href='architecture.html'">
+  <img src="https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Architecture">
+  <div class="card-header">Architecture</div>
+</div>
+
+
+
+</div>
+
+<script>
+function toggleCard(card) {
+  // close others
+  document.querySelectorAll('.card').forEach(c => {
+    if (c !== card) c.classList.remove('active');
+  });
+
+  // toggle clicked one
+  card.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
